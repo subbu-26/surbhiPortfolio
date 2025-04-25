@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>surbhi pankaj kalke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>surbhi kalke</h1>
+            </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <section class="hero">
+    <h1 class="hero-title">Hey there, I'm surbhi kalke</h1>
+    <p class="hero-subtitle">A passionate IT student </p>
+    <br><a href="#contact" class="cta">Contact Me</a>
+</section>
+
+
+    <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>Hello, I'm <strong>surbhi kalke</strong>! I am currently pursuing a Bachelor's degree in Information Technology. I am a passionate learner who thrives on challenges and loves exploring new technologies. My strengths lie in being hardworking, reliable, and an excellent timekeeper.</p>
+
+    <p>I pride myself on being receptive and approachable, and I enjoy working in collaborative environments where communication and teamwork are key. My ability to connect with people at all levels helps me understand diverse perspectives and contribute effectively to group projects.</p>
+
+    <p>Beyond academics, I actively take part in tech communities and coding events. I enjoy building web projects, exploring open-source contributions, and staying updated with the latest trends in the tech world. I believe in lifelong learning and strive to improve my skills every day.</p>
+
+    <p>In a nutshell, I describe myself as helpful, honest, and fair—someone who values integrity and consistency in both personal and professional life. I aim to grow into a skilled IT professional and make a positive impact through technology.</p>
+    <br>
+<br> <a href="https://github.com/subbu-26/surbhiPortfolio" target="_blank" class="github-link">View the Project on GitHub</a>
+    </section>
+<section id="education" class="section">
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Bachelor of Science in Information Technology</strong><br>
+            S.K. College Of Science And Commerce,Nerul, University of Mumbai<br>
+            CGPA Of 1<sup>th</sup> Sem: <strong>9.2/10</strong><br>
+             CGPA Of 2<sup>th</sup> Sem: <strong>9.4/10</strong><br>
+             CGPA Of 3<sup>th</sup> Sem: <strong>9.1/10</strong><br>
+             CGPA of 4<sup>th</sup> Sem: <strong>9.6/10</strong><br>
+            2023 – 2026
+        </li>
+        <li><strong>HSC (12th Grade / Science)</strong><br>
+            DY PATIL college ,belapur <br>
+            Percentage: <strong>60.40%</strong><br>
+            2020 – 2022
+        </li>
+        <li><strong>SSC (10th Grade)</strong><br>
+             Our lady of good counsel high school,Sion<br>
+            Percentage: <strong>85%</strong><br>
+            2019 – 2020
+        </li>
+    </ul>
+</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Java Programming</li>
+            <li>C and Advanced C++</li>
+            <li>Python</li>
+            <li>MySQL (Database Management)</li>
+            <li>R Tool</li>
+            <li>JavaScript</li>
+           <li>Mobile App Development (Flutter)</li>
+          <li> Git & GitHub</li>
+          <li>VS Code </li>
+<li>Machine Learning (TensorFlow )</li>
+<li>Wireshark (Network packet analysis)</li>
+<li>Linux Command Line</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Responsive Portfolio Website</h3>
+                <p>I created this responsive portfolio website as part of a certified course using GitHub and Visual Studio.</p>
+
+
+            </div>
+            <div class="project-card">
+                <h3>Bus Ticket Booking Website</h3>
+                <p>The Bus Ticket Booking Website is an online platform that allows users to easily search for available buses and book tickets for their desired routes. The website aims to simplify the travel booking process by offering a user-friendly interface .</p>
+                           </div>
+            <div class="project-card">
+                <h3> Sign Language Alphabet Detector with Voice</h3>
+                <p>The Sign Language Alphabet Detector with Voice is an AI-based system designed to recognize American Sign Language (ASL) alphabets in real-time using a webcam. The system translates hand gestures into text and speaks the recognized letter aloud, providing an interactive experience for users who may be deaf or hard of hearing. This project aims to bridge communication gaps and assist in learning sign language.</p>
+                           </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="sendSMS(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 surbhi kalke. All rights reserved.</p>
+        <div>
+            <a href="https://github.com/subbu-26" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/Surbhi kalke" target="_blank">LinkedIn</a> |
+         <a href="mailto:surbhikalke@gmail.com">Email me</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Function to simulate sending SMS (For demo purpose, use an API like Twilio in production)
+        function sendSMS(event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Here, you can integrate with an actual SMS service like Twilio
+            alert(`Message sent!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+        }
+    </script>
+</body>
+</html>
